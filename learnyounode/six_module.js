@@ -16,7 +16,7 @@ module.exports= function(dir,ext,callback){
 		var filtered= files.filter(function(file){
 			return path.extname(file)== '.'+ext 
 		})
-		callback(err,filtered);
+		callback(null,filtered);
 	})
 }
 

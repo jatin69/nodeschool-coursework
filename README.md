@@ -6,9 +6,8 @@ Course work for Node school workshops
 npm install -g _workshop_name_
 
 
+- For workshop listings refer [nodeschool](https://nodeschool.io/#workshopper-list).
+- [Workshopper on github](https://github.com/workshopper)
 
-For workshop listings refer [nodeschool](https://nodeschool.io/#workshopper-list).
-
-
-For coding standards, refer [Node style Guide](https://github.com/felixge/node-style-guide)
+- For coding standards, refer [Node style Guide](https://github.com/felixge/node-style-guide)
 

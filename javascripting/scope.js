@@ -22,7 +22,7 @@ var a = 1, b = 2, c = 3;
 
 
 /*
-// IIFE 
+// IIFE - immediately-invoked function expression
 
  (function one() {
      function two() {

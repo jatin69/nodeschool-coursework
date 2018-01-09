@@ -24,10 +24,27 @@ class TD extends React.Component {
 }
 
 class Todo extends React.Component {
+   constructor(props) {
+            super(props);
+
+            this.state = {
+              checked : false
+            };
+    }
+
+  handleChange() {
+    this.setState( {
+        checked: !this.state.checked
+    }
+    );
+  }
   render () {
   	return (
   		<tr>
-  		<TD>{this.props.title}</TD>
+      <TD> 
+       <input type="checkbox" checked={this.state.checked} onChange={this.handleChange.bind(this)}/>
+      </TD>
+      <TD>{this.props.title}</TD>
   		<TD>{this.props.children}</TD>
   		</tr>
   		);

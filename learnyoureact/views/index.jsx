@@ -16,7 +16,7 @@ export default class TodoBox extends React.Component{
 class TD extends React.Component {
 	render () {
 		return (
-			<td style={{border: "1px solid black;"}}>
+			<td style={style.tableContent}>
 			{this.props.children}
 			</td>
 			);
@@ -54,11 +54,16 @@ Todo.propTypes = {
   title: PropTypes.string.isRequired
 }
 
+ let style = {
+        tableContent: {
+            border: "1px solid black;"
+        }
+    };
 class TodoList extends React.Component {
   render() {
   	return ( 		
 		    <div className="todoList">
-		       <table style={{border: "2px solid black;"}}>
+		       <table style={{ border: "2px solid black;"}}>
                     <tbody>
                     <Todo title="Shopping">Milk</Todo>
                     <Todo title="Hair cut">13:00</Todo>

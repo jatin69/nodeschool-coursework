@@ -1,3 +1,6 @@
+*.html
+package.json
+
 # Logs
 logs
 *.log
